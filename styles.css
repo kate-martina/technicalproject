@@ -1,0 +1,181 @@
+/*setting*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    font-size: 62.5%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*navbar*/
+
+#navbar{
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to right, #111111, #313247);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    padding:  0;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+.navbar-header p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 100;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(245, 241, 241, 0.3);
+    
+}
+
+#navbar ul{
+    list-style: none;
+    padding-top: 2rem;
+    
+}
+
+#navbar ul li{
+    line-height: 2.8rem;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    background: cornsilk;
+    color: black;
+    padding: 5px 10px;
+    transition: all 0.5s ease-out;
+    border-radius: 2px;
+}
+
+/*main-doc*/
+
+#main-doc{
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.main-section{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+
+}
+
+code{
+    font-size: 1.3rem;
+}
+
+p, li{
+    font-size: 1rem;
+}
+
+h3{
+    text-transform: uppercase;
+    line-height: 1.3rem;
+    padding-top: 0.5rem;
+}
+
+article{
+    margin-top: 0.2rem;
+}
+
+#versiones.main-section{
+    border-bottom: none;
+}
+
+img{
+    width: 100%;
+    
+}
+
+figure{
+    padding: 5rem 0;
+}
+
+figcaption{
+    font-size: 1rem;
+}
+
+/*main-doc end*/
+
+@media (min-width: 500px){
+
+    figcaption{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 800px){
+    body{
+        font-size: 16px;
+    }
+    
+    #navbar{
+        max-width: 380px ;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        position:fixed;     
+    }
+
+    #main-doc{
+        padding-left: 26rem;
+        padding-right: 2rem;
+        max-width: 1600px;
+    }
+
+    code{
+        font-size: 1.6rem;
+    }
+
+    p, li{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    #versiones article{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: 400px;
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
+
+
+}
+
